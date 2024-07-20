@@ -233,11 +233,33 @@ body {
     background: #00ccff;
     border: 2px solid #00ccff;
   }
+/*----------BUTTON APPLY-----------*/
+  .btn-apply {
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #00ccff;
+    color: #000;
+  }
+  
+   .btn-apply:hover {
+    background: #a5edff;
+    border: 2px solid #00ccff;
+  }
   
   /*--------------------------------------------------------------
   HERO 2
   --------------------------------------------------------------*/
-  
+  .deadline:{
+    color: #00ccff;
+  }
   
   /*--------------------------------------------------------------
   # Navigation Menu
@@ -525,7 +547,6 @@ body {
   
   #about .about-container .content {
     background: #fff;
-    margin-top: -300px;
     
   }
   
@@ -821,7 +842,18 @@ body {
   #portfolio .portfolio-item:hover img {
     top: -30px;
   }
-  
+  /*decor---------*/
+ .decor {
+    background: #ffffff;
+    border:2px solid #ededed47;
+    border-radius: 200px;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+    box-shadow: 0 0 10px 1px rgba(70, 70, 70, 0.25);
+    backdrop-filter: blur(10px);
+  }
+
   /* Team Section
   --------------------------------*/
   #team {
@@ -969,7 +1001,8 @@ body {
   
   #contact .form button[type="submit"] {
     background: #00ccff;
-    border: 0;
+    border: 0px;
+    border-radius: 20px;
     padding: 10px 24px;
     color: #fff;
     transition: 0.4s;
@@ -1008,7 +1041,7 @@ body {
 
     .box .image.fit {
         margin: 0;
-        border-radius: 20px;
+        border-radius: 0;
     }
 
         .box .image.fit img {
@@ -1315,7 +1348,7 @@ body {
 			}
 
 			.wrapper.style2 a {
-				color: #8a4680;
+				color: #00ccff;
 			}
 
 			.wrapper.style2 strong, .wrapper.style2 b {

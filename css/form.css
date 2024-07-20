@@ -11,7 +11,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #4070f4;
+    background: #00ccff;
 }
 .container{
     position: relative;
@@ -37,7 +37,7 @@ body{
     height: 3px;
     width: 27px;
     border-radius: 8px;
-    background-color: #4070f4;
+    background-color: #00ccff;
 }
 .container form{
     position: relative;
@@ -125,7 +125,7 @@ form .fields .input-field{
     color: #fff;
     border-radius: 5px;
     margin: 25px 0;
-    background-color: #4070f4;
+    background-color: #00ccff;
     transition: all 0.3s linear;
     cursor: pointer;
 }
@@ -168,3 +168,24 @@ form .buttons button , .backBtn{
         width: 100%;
     }
 }
+
+/* BUTTON*/
+ .btn-get-started {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #00ccff;
+    color: #fff;
+    background: #00ccff;
+  }
+  
+ .btn-get-started:hover {
+    background: #265df2;
+    border: 2px solid #265df2;
+  }
