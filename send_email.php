@@ -17,8 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $finish_date = $_POST['finish_date'];
     $session = $_POST['session'];
     $department = $_POST['department'];
-    $application_letter = $_FILES['application_letter'];
-
+    
     $to = 'lunetechng@gmail.com';
     $subject = 'SIWES Registration Details';
     $message = "Personal Details:\n
@@ -42,25 +41,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     Preferred Session: $session\n
     Department: $department\n";
 
-    $headers = "From: noreply@namakanoict.com\r\n";
-    $headers .= "Reply-To: $email\r\n";
+    $headers = "From: umarmuhdamin123@gmail.com\r\n";
+    $headers .= "Reply-To: umarmuhdamin123@gmail.com\r\n";
     $headers .= "X-Mailer: PHP/" . phpversion();
-
-    // Handle file upload
-    if ($application_letter['error'] == UPLOAD_ERR_OK) {
-        $upload_dir = 'uploads/';
-        $upload_file = $upload_dir . basename($application_letter['name']);
-
-        if (move_uploaded_file($application_letter['tmp_name'], $upload_file)) {
-            $message .= "\nApplication Letter: $upload_file\n";
-        } else {
-            echo "Failed to upload file.";
-            exit;
-        }
-    } else {
-        echo "File upload error: " . $application_letter['error'];
-        exit;
-    }
 
     if (mail($to, $subject, $message, $headers)) {
         echo "Email sent successfully.";
