@@ -18,8 +18,8 @@ body{
     max-width: 900px;
     width: 100%;
     border-radius: 6px;
-    padding: 30px;
-    margin: 0 15px;
+    padding: 50px 15px;
+    margin: 50px 15px;
     background-color: #fff;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }
@@ -124,7 +124,6 @@ form .fields .input-field{
     outline: none;
     color: #fff;
     border-radius: 5px;
-    margin: 25px 0;
     background-color: #474D52;
     transition: all 0.3s linear;
     cursor: pointer;
@@ -151,7 +150,7 @@ form .buttons button , .backBtn{
     margin-right: 14px;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 800px) {
     .container form{
         overflow-y: scroll;
     }
@@ -159,7 +158,7 @@ form .buttons button , .backBtn{
        display: none;
     }
     form .fields .input-field{
-        width: calc(100% / 2 - 15px);
+        width: calc(100% / 2 - 10px);
     }
 }
 
